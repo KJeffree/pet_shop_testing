@@ -25,9 +25,17 @@ end
 def pets_by_breed(pet_shop_array, breed)
   pets_with_specified_breed = []
   for pet in pet_shop_array[:pets]
-    if pet[:breed] == breed 
+    if pet[:breed] == breed
       pets_with_specified_breed.push(pet)
     end
   end
   return pets_with_specified_breed
+end
+
+def find_pet_by_name(pet_shop_array, name_of_pet)
+  for pet in pet_shop_array[:pets]
+    if pet[:name] == name_of_pet
+      return pet
+    end
+  end
 end
