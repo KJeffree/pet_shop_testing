@@ -58,7 +58,3 @@ end
 def add_pet_to_stock(pet_shop_array, new_pet)
   pet_shop_array[:pets].push(new_pet)
 end
-
-add_pet_to_stock(@pet_shop, @new_pet)
-add_pet_to_stock(@pet_shop, @new_pet)
-p stock_count(@pet_shop)
